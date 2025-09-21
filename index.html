@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head section includes meta tags, fonts with Google Fonts and Font Awesome, stylesheets, and the landing page title -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="public/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Hostel Manager</title>
+</head>
+
+<!-- The body section contains the header, main content, and footer of the landing page -->
+<body>
+<header>
+    <!-- The brand section shows the logo for the landing page -->
+    <div class="brand">
+        <img src="assets/images/brand-icon-left.png" alt="Left icon">
+        <h1>Hostel Manager</h1>
+        <img src="assets/images/brand-icon-right.png" alt="Right icon">
+    </div>
+
+    <!-- The navigation bar includes links to different sections of the landing page -->
+    <nav class="navbar">
+        <a href="#hero" data-key="home">Home</a>
+        <a href="#about" data-key="about">About</a>
+        <a href="#pricing" data-key="pricing">Pricing</a>
+        <a href="#footer" data-key="contact">Contact</a>
+    </nav>
+
+    <!-- The header buttons include login, sign up, and language switcher options -->
+    <div class="headerButtons">
+        <a href="#" class="login" data-key="login">Login</a>
+        <a href="#" class="signUp" data-key="signup">Sign Up</a>
+        <select id="languageSwitcher">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+        </select>
+    </div>
+</header>
+
+<main>
+    <!-- The hero section is the main attraction of the landing page -->
+    <section id="hero">
+        <!-- It shows an illustration that shows the purpose of the platform -->
+        <div class="heroImage">
+            <img src="assets/images/hero-image.png" alt="Hostel Manager illustration">
+        </div>
+
+        <!-- It contains an attractive title and a description of the platform to engage visitors -->
+        <div class="heroContent">
+            <h1 data-key="heroTitle">Manage your Hostel with Ease</h1>
+            <p data-key="heroText">Hostel Manager helps you organize bookings,
+                clients, and services in one simple platform.</p>
+            <button class="heroButton" data-key="getStarted">Get Started</button>
+        </div>
+    </section>
+
+    <!-- The about section provides information about the platform's features and benefits -->
+    <section id="about">
+        <h2 data-key="aboutTitle">About Hostel Manager</h2>
+        <!-- An embedded video provides a visual overview of the platform's functionality -->
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/ScMzIvxBSi4"
+                title="About the product"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+        </iframe>
+
+        <!-- It includes a grid layout to showcase key features -->
+        <p data-key="aboutText">Our platform offers powerful tools to make hostel management simple and efficient.
+            Here are some of the key features:</p>
+
+        <!-- Features grid layout -->
+        <div class="featuresGrid">
+            <div class="featureCard">
+                <h3 data-key="feature1Title">Real-time Booking Management</h3>
+                <p data-key="feature1Text">Avoid overbooking and manage room availability easily.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature2Title">Automated Invoicing & Receipts</h3>
+                <p data-key="feature2Text">Automatically generate receipts and invoices for all payments, integrated with secure gateways like PayPal and Stripe.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature3Title">Guest Reviews & Ratings</h3>
+                <p data-key="feature3Text">Encourage direct feedback from guests to continuously improve the hostel experience.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature4Title">Promotions & Discounts</h3>
+                <p data-key="feature4Text">Create flexible pricing plans to attract more clients.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature5Title">Reports & Analytics</h3>
+                <p data-key="feature5Text">Monitor occupancy, revenue, and usage of additional services.</p>
+            </div>
+            <div class="featureCard">
+                <h3 data-key="feature6Title">Mobile & Remote Access</h3>
+                <p data-key="feature6Text">Manage your hostel from any device, anywhere.</p>
+            </div>
+        </div>
+
+        <section class="steps">
+            <h2 data-key="stepsTitle">How It Works</h2>
+            <div class="stepsBoxes">
+                <div class="step">
+                    <div class="circle">1</div>
+                    <div class="stepText" data-key="step1">Sign Up & Set Up Your Hostel</div>
+                </div>
+                <div class="step">
+                    <div class="circle">2</div>
+                    <div class="stepText" data-key="step2">Manage Bookings & Services</div>
+                </div>
+                <div class="step">
+                    <div class="circle">3</div>
+                    <div class="stepText" data-key="step3">Analyze Reports & Optimize Revenue</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The pricing section outlines the subscription plans available for the platform -->
+        <section id="pricing">
+            <h2 data-key="pricingTitle">Subscription Plans</h2>
+            <p data-key="pricingText">Choose the plan that best fits your hostel’s needs. Simple and transparent pricing, no hidden fees.</p>
+
+            <div class="pricingGrid">
+                <div class="pricingCard">
+                    <h3 data-key="planBasicName">Basic</h3>
+                    <p class="price" data-key="planBasicPrice">$29.90<span>/month</span></p>
+                    <ul>
+                        <li data-key="planBasicFeature1">Up to 50 rooms and bookings</li>
+                        <li data-key="planBasicFeature2">Basic guest management</li>
+                        <li data-key="planBasicFeature3">Monthly occupancy reports</li>
+                        <li data-key="planBasicFeature4">Integrated with PayPal, Stripe, MercadoPago</li>
+                        <li data-key="planBasicFeature5">Automatic notifications to clients (email, WhatsApp, push)</li>
+                    </ul>
+                    <button class="pricingButton" data-key="planBasicButton">Get Started</button>
+                </div>
+
+                <div class="pricingCardHighlight">
+                    <h3 data-key="planStandardName">Standard</h3>
+                    <p class="price" data-key="planStandardPrice">$59.90<span>/month</span></p>
+                    <ul>
+                        <li data-key="planStandardFeature1">Everything in Basic</li>
+                        <li data-key="planStandardFeature2">Up to 150 rooms</li>
+                        <li data-key="planStandardFeature3">Room service management (breakfast, cleaning, laundry)</li>
+                        <li data-key="planStandardFeature4">Promotions and discounts</li>
+                        <li data-key="planStandardFeature5">Weekly financial reports</li>
+                    </ul>
+                    <button class="pricingButton" data-key="planStandardButton">Get Started</button>
+                </div>
+
+                <div class="pricingCard">
+                    <h3 data-key="planPremiumName">Premium</h3>
+                    <p class="price" data-key="planPremiumPrice">$119.90<span>/month</span></p>
+                    <ul>
+                        <li data-key="planPremiumFeature1">Everything in Standard</li>
+                        <li data-key="planPremiumFeature2">Up to 450 rooms</li>
+                        <li data-key="planPremiumFeature3">Advanced dashboard with statistics</li>
+                        <li data-key="planPremiumFeature4">Predictive analytics for occupancy and pricing</li>
+                        <li data-key="planPremiumFeature5">Automatic client notifications</li>
+                    </ul>
+                    <button class="pricingButton" data-key="planStandardButton">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final call to action section to encourage visitors to sign up -->
+        <section class="finalCallToAction">
+            <h2 data-key="ctaTitle">Ready to Get Started?</h2>
+            <p data-key="ctaText">Join hundreds of hostel owners already simplifying their management with our platform.</p>
+            <a href="#" class="callToActionButton" data-key="ctaButton">Start Free Trial</a>
+        </section>
+    </section>
+</main>
+
+<!-- The footer section includes links to social media, and copyright information -->
+<footer id="footer">
+    <div class="footerLinks">
+        <a data-key="FAQ" href="#">FAQ</a>
+        <a data-key="privacyPolicy" href="#">Privacy Policy</a   >
+        <a data-key="termsOfService" href="#">Terms of Service</a>
+    </div>
+
+    <div class="footerSocial">
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href=https://www.facebook.com/><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <p data-key="copy" class="footerCopy">© 2025 Hostel Manager. All rights reserved.</p>
+</footer>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
